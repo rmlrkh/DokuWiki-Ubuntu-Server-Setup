@@ -5,12 +5,12 @@ services:
     image: bitnami/dokuwiki:latest
     container_name: dokuwiki
     ports:
-      - "8081:8080"
+      - "8080:8080"
     environment:
-      - DOKUWIKI_USERNAME=fvillain
-      - DOKUWIKI_PASSWORD=newb313!
-      - DOKUWIKI_FULL_NAME=fvillain
-      - DOKUWIKI_EMAIL=helloitsramil@gmail.com
+      - DOKUWIKI_USERNAME=name
+      - DOKUWIKI_PASSWORD=password
+      - DOKUWIKI_FULL_NAME=yourname
+      - DOKUWIKI_EMAIL=yourmail
     volumes:
       - dokuwiki_data:/bitnami/dokuwiki
 
