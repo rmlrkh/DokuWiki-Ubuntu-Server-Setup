@@ -15,5 +15,5 @@ docker-compose pull
 # Start the DokuWiki container
 docker-compose up -d
 
-echo "DokuWiki is up and running on http://localhost:8081"
+echo "DokuWiki is up and running on http://localhost:8080"
 
