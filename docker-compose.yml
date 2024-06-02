@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  dokuwiki:
+    image: bitnami/dokuwiki:latest
+    container_name: dokuwiki
+    ports:
+      - "8080:8080"
+    environment:
+      - DOKUWIKI_USERNAME=name
+      - DOKUWIKI_PASSWORD=pass
+      - DOKUWIKI_FULL_NAME=name
+      - DOKUWIKI_EMAIL=email
+    volumes:
+      - dokuwiki_data:/bitnami/dokuwiki
+
+volumes:
+  dokuwiki_data:
+    driver: local
